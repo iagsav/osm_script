@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" upload="true" generator="JOSM">
+	<node id="1" action="modify" visible="true" lat="51.8191457942" lon="103.19523776066" version="1"/>
+	<node id="2" action="modify" visible="true" lat="51.81906466292" lon="103.21041893089" version="1"/>
+	<node id="3" action="modify" visible="true" lat="51.80917918137" lon="103.21028068561" version="1"/>
+	<node id="4" action="modify" visible="true" lat="51.80926033045" lon="103.19509951539" version="1"/>
+	<node id="5" action="modify" visible="true" lat="51.81605415136" lon="103.21996398421" version="1"/>
+	<node id="6" action="modify" visible="true" lat="51.80896867945" lon="103.22059601219" version="1"/>
+	<node id="7" action="modify" visible="true" lat="51.80941102643" lon="103.233569414" version="1"/>
+	<node id="8" action="modify" visible="true" lat="51.8164964288" lon="103.23293738603" version="1"/>
+	<node id="9" action="modify" visible="true" lat="51.81396854792" lon="103.22428064429" version="1"/>
+	<node id="10" action="modify" visible="true" lat="51.81113181201" lon="103.22445379273" version="1"/>
+	<node id="11" action="modify" visible="true" lat="51.81124691727" lon="103.22938750122" version="1"/>
+	<node id="12" action="modify" visible="true" lat="51.81408364594" lon="103.22921435278" version="1"/>
+	<way id="13" action="modify" visible="true" version="1">
+		<nd ref="1"/>
+		<nd ref="2"/>
+		<nd ref="3"/>
+		<nd ref="4"/>
+		<nd ref="1"/>
+	</way>
+	<way id="14" action="modify" visible="true" version="1">
+		<nd ref="5"/>
+		<nd ref="6"/>
+		<nd ref="7"/>
+		<nd ref="8"/>
+		<nd ref="5"/>
+	</way>
+	<way id="15" action="modify" visible="true" version="1">
+		<nd ref="9"/>
+		<nd ref="10"/>
+		<nd ref="11"/>
+		<nd ref="12"/>
+		<nd ref="9"/>
+	</way>
+	<relation id="16" action="modify" visible="true" version="1">
+		<member type="way" ref="14" role="outer"/>
+		<member type="way" ref="15" role="inner"/>
+		<tag k="type" v="multipolygon"/>
+	</relation>
+	<relation id="17" action="modify" visible="true" version="1">
+		<member type="relation" ref="16" role="part"/>
+		<member type="way" ref="13" role="part"/>
+		<tag k="name" v="мои любимые квадратики"/>
+	</relation>
+</osm>

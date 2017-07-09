@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version='0.6' upload='true' generator='JOSM'>
+  <node id='-7' action='modify' visible='true' lat='51.8191457942' lon='103.19523776066' />
+  <node id='-10' action='modify' visible='true' lat='51.81906466292' lon='103.21041893089' />
+  <node id='-14' action='modify' visible='true' lat='51.80917918137' lon='103.21028068561' />
+  <node id='-16' action='modify' visible='true' lat='51.80926033045' lon='103.19509951539' />
+  <node id='-20' action='modify' visible='true' lat='51.81605415136' lon='103.21996398421' />
+  <node id='-21' action='modify' visible='true' lat='51.80896867945' lon='103.22059601219' />
+  <node id='-23' action='modify' visible='true' lat='51.80941102643' lon='103.233569414' />
+  <node id='-25' action='modify' visible='true' lat='51.8164964288' lon='103.23293738603' />
+  <node id='-29' action='modify' visible='true' lat='51.81396854792' lon='103.22428064429' />
+  <node id='-30' action='modify' visible='true' lat='51.81113181201' lon='103.22445379273' />
+  <node id='-32' action='modify' visible='true' lat='51.81124691727' lon='103.22938750122' />
+  <node id='-34' action='modify' visible='true' lat='51.81408364594' lon='103.22921435278' />
+  <way id='-11' action='modify' visible='true'>
+    <nd ref='-7' />
+    <nd ref='-10' />
+    <nd ref='-14' />
+    <nd ref='-16' />
+    <nd ref='-7' />
+  </way>
+  <way id='-22' action='modify' visible='true'>
+    <nd ref='-20' />
+    <nd ref='-21' />
+    <nd ref='-23' />
+    <nd ref='-25' />
+    <nd ref='-20' />
+  </way>
+  <way id='-31' action='modify' visible='true'>
+    <nd ref='-29' />
+    <nd ref='-30' />
+    <nd ref='-32' />
+    <nd ref='-34' />
+    <nd ref='-29' />
+  </way>
+  <relation id='-41' action='modify' visible='true'>
+    <member type='way' ref='-22' role='outer' />
+    <member type='way' ref='-31' role='inner' />
+    <tag k='type' v='multipolygon' />
+  </relation>
+  <relation id='-56' action='modify' visible='true'>
+    <member type='relation' ref='-41' role='part' />
+    <member type='way' ref='-11' role='part' />
+    <tag k='name' v='мои любимые квадратики' />
+  </relation>
+</osm>
